@@ -18,17 +18,17 @@ class MainActivity : AppCompatActivity() {
 
             when(number){
                 0->{
-                    cpuText.text = "相手の手はグーです"
+                    imageView.setImageResource(R.drawable.goo)
                     katimakeText.text = "引き分けです"
                     katimakeText.setTextColor(Color.BLACK)
                 }
                 1->{
-                    cpuText.text = "相手の手はチョキです"
+                    imageView.setImageResource(R.drawable.choki)
                     katimakeText.text = "あなたの勝ちです"
                     katimakeText.setTextColor(Color.RED)
                 }
                 2->{
-                    cpuText.text = "相手の手はパーです"
+                    imageView.setImageResource(R.drawable.paa)
                     katimakeText.text = "あなたの負けです"
                     katimakeText.setTextColor(Color.BLACK)
                 }
@@ -44,17 +44,17 @@ class MainActivity : AppCompatActivity() {
 
             when (number) {
                 0 -> {
-                    cpuText.text = "相手の手はグーです"
+                    imageView.setImageResource(R.drawable.goo)
                     katimakeText.text = "あなたの負けです"
                     katimakeText.setTextColor(Color.BLACK)
                 }
                 1 -> {
-                    cpuText.text = "相手の手はチョキです"
+                    imageView.setImageResource(R.drawable.choki)
                     katimakeText.text = "引き分けです"
                     katimakeText.setTextColor(Color.BLACK)
                 }
                 2 -> {
-                    cpuText.text = "相手の手はパーです"
+                    imageView.setImageResource(R.drawable.paa)
                     katimakeText.text = "あなたの勝ちです"
                     katimakeText.setTextColor(Color.RED)
                 }
@@ -71,17 +71,17 @@ class MainActivity : AppCompatActivity() {
 
             when (number) {
                 0 -> {
-                    cpuText.text = "相手の手はグーです"
+                    imageView.setImageResource(R.drawable.goo)
                     katimakeText.text = "あなたの勝ちです"
                     katimakeText.setTextColor(Color.RED)
                 }
                 1 -> {
-                    cpuText.text = "相手の手はチョキです"
+                    imageView.setImageResource(R.drawable.choki)
                     katimakeText.text = "あなたの負けです"
                     katimakeText.setTextColor(Color.BLACK)
                 }
                 2 -> {
-                    cpuText.text = "相手の手はパーです"
+                    imageView.setImageResource(R.drawable.paa)
                     katimakeText.text = "引き分けです"
                     katimakeText.setTextColor(Color.BLACK)
                 }

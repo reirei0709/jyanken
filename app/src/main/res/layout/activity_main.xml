@@ -10,67 +10,63 @@
         android:id="@+id/gooButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="24dp"
         android:text="グー"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/chokiButton"
+        app:layout_constraintEnd_toStartOf="@+id/chokiButton"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/chokiButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="29dp"
         android:text="チョキ"
         app:layout_constraintEnd_toStartOf="@+id/paaButton"
         app:layout_constraintStart_toEndOf="@+id/gooButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/katimakeText" />
 
     <Button
         android:id="@+id/paaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginEnd="45dp"
         android:text="パー"
+        app:layout_constraintBaseline_toBaselineOf="@+id/chokiButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerText"
+        app:srcCompat="@drawable/goo" />
 
     <TextView
         android:id="@+id/playerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="339dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="26dp"
         android:text="player"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gooButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/katimakeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="349dp"
+        android:layout_marginStart="21dp"
         android:text="勝敗"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cpuText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/cpuText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="354dp"
-        android:text="cpu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playerText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
